@@ -1,0 +1,55 @@
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  display: inline;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin-right: 10px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main > img {
+  max-width: 960px; 
+  height: 450px;
+  object-fit: cover; /* Maintain aspect ratio while covering the specified dimensions */
+  display: block;   /* Ensure the image is centered horizontally */
+  margin: 0 auto;   /* Center the image horizontally */
+  border: 10px black
+
+}
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Additional styling as needed */
