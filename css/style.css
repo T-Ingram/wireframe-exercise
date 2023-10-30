@@ -5,14 +5,22 @@ header {
 }
 
 .logo {
-  display: inline;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.logo img {
+  max-width: 200px;
+  max-height: 70px;
 }
 
 nav ul {
   display: flex;
   list-style: none;
-  margin: 0;
-  padding: 0;
+  margin: 10px;
+  padding: 30px;
 }
 
 nav li {
@@ -28,18 +36,43 @@ main {
 main > img {
   max-width: 960px; 
   height: 450px;
-  object-fit: cover; /* Maintain aspect ratio while covering the specified dimensions */
-  display: block;   /* Ensure the image is centered horizontally */
-  margin: 0 auto;   /* Center the image horizontally */
-  border: 10px black
+  object-fit: cover; /* Maintain aspect ratio */
+  display: block;   /* Center image horizontally */
+  margin: 0 auto;   /* Center image horizontally */
+  border: 2px solid #808080;
+  padding: 10px;
+}
+main > div > p {
+  width: 300px;
+  height: 375px;
+  border: 2px solid #808080;
+  text-align: center;
+  margin: 10px;
+  display: inline-block;
+}
 
+/* Clear any margin on the first sub-banner */
+main > div > p:first-child {
+  margin-left: 0;
+}
+
+/* Center the text within the sub-banners */
+main > div > p > img {
+  max-width: 100%;
+  max-height: 100%;
 }
 .flex-container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
+main p img {
+  width: 300px;
+  height: 375px;
+  border: 2px solid #808080;
+  display: inline-block;
+  margin: 10px auto;
+}
 img {
   max-width: 100%;
 }
