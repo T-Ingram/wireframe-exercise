@@ -21,6 +21,8 @@ nav ul {
   list-style: none;
   margin: 10px;
   padding: 30px;
+  width: 680px;
+  justify-content: space-between;
 }
 
 nav li {
@@ -50,13 +52,6 @@ main > div > p {
   margin: 10px;
   display: inline-block;
 }
-
-/* Clear any margin on the first sub-banner */
-main > div > p:first-child {
-  margin-left: 0;
-}
-
-/* Center the text within the sub-banners */
 main > div > p > img {
   max-width: 100%;
   max-height: 100%;
@@ -66,6 +61,13 @@ main > div > p > img {
   flex-direction: column;
   align-items: center;
 }
+.flex-container div {
+  width: 960px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20px;
+}
 main p img {
   width: 300px;
   height: 375px;
@@ -73,10 +75,6 @@ main p img {
   display: inline-block;
   margin: 10px auto;
 }
-img {
-  max-width: 100%;
-}
-
 button {
   background-color: #007bff;
   color: #fff;
