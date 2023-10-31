@@ -14,6 +14,7 @@ header {
 .logo img {
   max-width: 200px;
   max-height: 70px;
+  margin: 30px
 }
 
 nav ul {
@@ -35,16 +36,20 @@ main {
   align-items: center;
 }
 
-main > img {
-  max-width: 960px; 
+main>img {
+  max-width: 960px;
   height: 450px;
-  object-fit: cover; /* Maintain aspect ratio */
-  display: block;   /* Center image horizontally */
-  margin: 0 auto;   /* Center image horizontally */
+  object-fit: cover;
+  /* Maintain aspect ratio */
+  display: block;
+  /* Center image horizontally */
+  margin: 0 auto;
+  /* Center image horizontally */
   border: 2px solid #808080;
   padding: 10px;
 }
-main > div > p {
+
+main>div>p {
   width: 300px;
   height: 375px;
   border: 2px solid #808080;
@@ -52,35 +57,59 @@ main > div > p {
   margin: 10px;
   display: inline-block;
 }
-main > div > p > img {
-  max-width: 100%;
-  max-height: 100%;
-}
+
 .flex-container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .flex-container div {
   width: 960px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 20px;
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
-main p img {
-  width: 300px;
-  height: 375px;
-  border: 2px solid #808080;
-  display: inline-block;
-  margin: 10px auto;
+
+.section-banner-container {
+  width: 960px;
+  display: flex;
+  flex-direction: row;
 }
-button {
+
+.left-half {
+  display: flex;
+  flex-direction: row;
+  margin-right: 30px;
+  margin-top: 5px;
+  width: 50%;
+}
+---------
+.right-half > div {
+  height: 10%; /* Set a fixed or maximum height for the scrollable container */
+  overflow-y: auto; /* Enable vertical scrolling when content overflows */
+  padding: 20px; /* Add padding for better spacing */
+}
+.right-half > div h2 {
+  /* Style for the section heading */
+  font-size: 1px;
+  margin: 0;
+}
+
+.right-half > div p {
+  /* Style for the Lorem ipsum text */
+  margin: 10px 0;
+}
+
+.right-half > div button {
+  /* Style for the Call To Action button */
   background-color: #007bff;
   color: #fff;
   padding: 10px 20px;
   border: none;
   cursor: pointer;
+  margin-top: 10px; /* Add a margin to separate it from the text */
 }
-
-/* Additional styling as needed */
+--------
