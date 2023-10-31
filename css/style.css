@@ -88,13 +88,15 @@ main>div>p {
 }
 ---------
 .right-half > div {
-  height: 10%; /* Set a fixed or maximum height for the scrollable container */
-  overflow-y: auto; /* Enable vertical scrolling when content overflows */
+  width: 15vw;
+  height: 20vh; /* Set a fixed or maximum height for the scrollable container */
+  overflow: scroll; /* Enable vertical scrolling when content overflows */
   padding: 20px; /* Add padding for better spacing */
+
 }
 .right-half > div h2 {
   /* Style for the section heading */
-  font-size: 1px;
+  font-size: 10px;
   margin: 0;
 }
 
