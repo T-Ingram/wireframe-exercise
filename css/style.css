@@ -86,23 +86,23 @@ main>div>p {
   margin-top: 5px;
   width: 50%;
 }
----------
+
 .right-half > div {
   width: 15vw;
-  height: 20vh; /* Set a fixed or maximum height for the scrollable container */
-  overflow: scroll; /* Enable vertical scrolling when content overflows */
+  height: 150px; /* Set a fixed or maximum height for the scrollable container */
+  overflow: auto; /* Enable vertical scrolling when content overflows */
   padding: 20px; /* Add padding for better spacing */
 
 }
-.right-half > div h2 {
+.right-half > h2 {
   /* Style for the section heading */
-  font-size: 10px;
+  font-size: 30px;
   margin: 0;
 }
-
-.right-half > div p {
-  /* Style for the Lorem ipsum text */
+#LoremIpsum {
   margin: 10px 0;
+  height: 335px;
+  overflow: auto;
 }
 
 .right-half > div button {
@@ -114,4 +114,3 @@ main>div>p {
   cursor: pointer;
   margin-top: 10px; /* Add a margin to separate it from the text */
 }
---------
