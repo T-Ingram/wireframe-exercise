@@ -40,11 +40,8 @@ main>img {
   max-width: 960px;
   height: 450px;
   object-fit: cover;
-  /* Maintain aspect ratio */
   display: block;
-  /* Center image horizontally */
   margin: 0 auto;
-  /* Center image horizontally */
   border: 2px solid #808080;
   padding: 10px;
 }
@@ -89,16 +86,16 @@ main>div>p {
 
 .right-half > div {
   width: 15vw;
-  height: 150px; /* Set a fixed or maximum height for the scrollable container */
-  overflow: scroll; /* Enable vertical scrolling when content overflows */
-  padding: 20px; /* Add padding for better spacing */
-
+  height: 150px;
+  overflow: scroll;
+  padding: 20px;
 }
+
 .right-half > h2 {
-  /* Style for the section heading */
   font-size: 25px;
   margin-top: 15px;
 }
+
 #LoremIpsum {
   margin: 10px 0;
   height: 325px;
@@ -106,17 +103,17 @@ main>div>p {
 }
 
 .right-half > div button {
-  /* Style for the Call To Action button */
   background-color: #007bff;
   color: #fff;
   padding: 10px 20px;
   border: none;
   cursor: pointer;
-  margin-top: 10px; /* Add a margin to separate it from the text */
+  margin-top: 10px;
 }
+
 footer > div {
   width: 960px;
   height: 150px;
   background-color: #DDD;
-  margin: 30px auto; /* Center the box horizontally with 30px top margin */
+  margin: 30px auto;
 }
