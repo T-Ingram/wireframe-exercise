@@ -90,18 +90,18 @@ main>div>p {
 .right-half > div {
   width: 15vw;
   height: 150px; /* Set a fixed or maximum height for the scrollable container */
-  overflow: auto; /* Enable vertical scrolling when content overflows */
+  overflow: scroll; /* Enable vertical scrolling when content overflows */
   padding: 20px; /* Add padding for better spacing */
 
 }
 .right-half > h2 {
   /* Style for the section heading */
-  font-size: 30px;
-  margin: 0;
+  font-size: 25px;
+  margin-top: 15px;
 }
 #LoremIpsum {
   margin: 10px 0;
-  height: 335px;
+  height: 325px;
   overflow: auto;
 }
 
@@ -113,4 +113,10 @@ main>div>p {
   border: none;
   cursor: pointer;
   margin-top: 10px; /* Add a margin to separate it from the text */
+}
+footer > div {
+  width: 960px;
+  height: 150px;
+  background-color: #DDD;
+  margin: 30px auto; /* Center the box horizontally with 30px top margin */
 }
